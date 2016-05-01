@@ -1,0 +1,438 @@
+package voidzone.com.br.calculadora;
+
+import android.support.v7.app.AlertDialog;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.*;
+import android.widget.*;
+
+public class actMain extends AppCompatActivity implements View.OnClickListener{
+
+    private EditText edtValor1;
+    private EditText edtValor2;
+    private Button btnCalc;
+    private Button btnSub;
+    private Button btnMult;
+    private Button btnDiv;
+    private Button btnNum0;
+    private Button btnNum1;
+    private Button btnNum2;
+    private Button btnNum3;
+    private Button btnNum4;
+    private Button btnNum5;
+    private Button btnNum6;
+    private Button btnNum7;
+    private Button btnNum8;
+    private Button btnNum9;
+    private Button btnSomar;
+    private int num2;
+    private int num1;
+    private String sinal;
+    private Button btnTotal;
+    private Button btnDivi;
+    private Button btnMultp;
+    private Button btnSube;
+
+
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_act_main);
+        edtValor1 = (EditText) findViewById(R.id.edtvalor1);
+        edtValor2 = (EditText) findViewById(R.id.edtValor2);
+        //
+        btnNum0 = (Button) findViewById(R.id.btnNum0);
+        num2 = 0;
+        btnNum0.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                if(num2 == 0){
+                    num2 = 0;
+                    Toast.makeText(getApplicationContext()," "+ num2, Toast.LENGTH_SHORT).show();
+                }else {
+                    int vl = ((num2 * 10) + 0);
+                    num2 = vl;
+                    Toast.makeText(getApplicationContext(), " " + num2, Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
+        //
+        btnNum1 = (Button) findViewById(R.id.btnNum1);
+
+        btnNum1.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                if(num2 == 0){
+                    num2 = 1;
+                    Toast.makeText(getApplicationContext()," "+ num2, Toast.LENGTH_SHORT).show();
+                }else {
+                    int vl = ((num2 * 10) + 1);
+                    num2 = vl;
+                    Toast.makeText(getApplicationContext(), " " + num2, Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
+        //
+        btnNum2 = (Button) findViewById(R.id.btnNum2);
+
+        btnNum2.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                if(num2 == 0){
+                    num2 = 2;
+                    Toast.makeText(getApplicationContext()," "+ num2, Toast.LENGTH_SHORT).show();
+                }else {
+                    int vl = ((num2 * 10) + 2);
+                    num2 = vl;
+                    Toast.makeText(getApplicationContext(), " " + num2, Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
+        //
+        btnNum3 = (Button) findViewById(R.id.btnNum3);
+
+        btnNum3.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                if(num2 == 0){
+                    num2 = 3;
+                    Toast.makeText(getApplicationContext()," "+ num2, Toast.LENGTH_SHORT).show();
+                }else {
+                    int vl = ((num2 * 10) + 3);
+                    num2 = vl;
+                    Toast.makeText(getApplicationContext(), " " + num2, Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
+        //
+        btnNum4 = (Button) findViewById(R.id.btnNum4);
+
+        btnNum4.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                if(num2 == 0){
+                    num2 = 4;
+                    Toast.makeText(getApplicationContext()," "+ num2, Toast.LENGTH_SHORT).show();
+                }else {
+                    int vl = ((num2 * 10) + 4);
+                    num2 = vl;
+                    Toast.makeText(getApplicationContext(), " " + num2, Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
+        //
+        btnNum5 = (Button) findViewById(R.id.btnNum5);
+
+        btnNum5.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                if (num2 == 0) {
+                num2 = 5;
+                    Toast.makeText(getApplicationContext()," "+ num2, Toast.LENGTH_SHORT).show();
+                }else {
+
+
+
+                    int vl = ((num2 * 10) + 5);
+                    num2 = vl;
+                    Toast.makeText(getApplicationContext(), " " + num2, Toast.LENGTH_SHORT).show();
+                }
+
+                /*
+                for (int num5 = 5; ;){
+                    if (num5 == 5){
+                        Toast.makeText(getApplicationContext()," "+ num5, Toast.LENGTH_SHORT).show();
+                        int vl = ((num5 *10) + 5);
+                        num5 = vl;
+                    }else{
+                        Toast.makeText(getApplicationContext()," "+ num5, Toast.LENGTH_SHORT).show();
+                        int vl = ((num5 *10) + 5);
+                        num5 = vl;
+
+                    }
+
+
+                }*/
+
+            }
+                                   });
+        //
+        btnNum6 = (Button) findViewById(R.id.btnNum6);
+
+        btnNum6.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                if(num2 == 0){
+                    num2 = 6;
+                    Toast.makeText(getApplicationContext()," "+ num2, Toast.LENGTH_SHORT).show();
+                }else {
+                    int vl = ((num2 * 10) + 6);
+                    num2 = vl;
+                    Toast.makeText(getApplicationContext(), " " + num2, Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
+        //
+        btnNum7 = (Button) findViewById(R.id.btnNum7);
+
+        btnNum7.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                if(num2 == 0){
+                    num2 = 7;
+                    Toast.makeText(getApplicationContext()," "+ num2, Toast.LENGTH_SHORT).show();
+                }else {
+                    int vl = ((num2 * 10) + 7);
+                    num2 = vl;
+                    Toast.makeText(getApplicationContext(), " " + num2, Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
+        //
+        btnNum8 = (Button) findViewById(R.id.btnNum8);
+
+        btnNum8.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                if(num2 == 0){
+                    num2 = 8;
+                    Toast.makeText(getApplicationContext()," "+ num2, Toast.LENGTH_SHORT).show();
+                }else {
+                    int vl = ((num2 * 10) + 8);
+                    num2 = vl;
+                    Toast.makeText(getApplicationContext(), " " + num2, Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
+        //
+        btnNum9 = (Button) findViewById(R.id.btnNum9);
+
+        btnNum9.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                if(num2 == 0){
+                    num2 = 9;
+                    Toast.makeText(getApplicationContext()," "+ num2, Toast.LENGTH_SHORT).show();
+                }else {
+                    int vl = ((num2 * 10) + 9);
+                    num2 = vl;
+                    Toast.makeText(getApplicationContext(), " " + num2, Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
+        //
+        btnSomar = (Button) findViewById(R.id.btnSomar);
+        btnSomar.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                num1 = num2;
+                num2 = 0;
+                sinal = "+";
+            }
+                                    });
+        //
+        btnDivi = (Button) findViewById(R.id.btnDivi);
+        btnDivi.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                num1 = num2;
+                num2 = 0;
+                sinal = "/";
+            }
+        });
+        //
+        btnSube = (Button) findViewById(R.id.btnSube);
+        btnSube.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                num1 = num2;
+                num2 = 0;
+                sinal = "-";
+            }
+        });
+        //
+        btnMultp = (Button) findViewById(R.id.btnMultp);
+        btnMultp.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                num1 = num2;
+                num2 = 0;
+                sinal = "*";
+            }
+        });
+        //
+        btnTotal = (Button)findViewById(R.id.btnTotal);
+
+        btnTotal.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+
+                switch(sinal){
+                    case "+":
+                        int vl = num2 + num1;
+                        Toast.makeText(getApplicationContext(), " "+vl, Toast.LENGTH_SHORT).show();
+                        num1 = 0;
+                        num2 = 0;
+                        break;
+                    case "-":
+                        vl = num2 - num1;
+                        Toast.makeText(getApplicationContext(), " "+vl, Toast.LENGTH_SHORT).show();
+                        num1 = 0;
+                        num2 = 0;
+                        break;
+                    case "*":
+                        vl = num2 * num1;
+                        Toast.makeText(getApplicationContext(), " "+vl, Toast.LENGTH_SHORT).show();
+                        num1 = 0;
+                        num2 = 0;
+                        break;
+                    case "/":
+                        vl = num2 / num1;
+                        Toast.makeText(getApplicationContext(), " "+vl, Toast.LENGTH_SHORT).show();
+                        num1 = 0;
+                        num2 = 0;
+                        break;
+                    default:
+                        Toast.makeText(getApplicationContext(), " Sinal desconhecido ", Toast.LENGTH_SHORT).show();
+                }
+
+                /*if(sinal == "+"){
+                    int vl = num2 + num2;
+                    Toast.makeText(getApplicationContext(), " " + vl, Toast.LENGTH_SHORT).show();
+                    num1 = 0;
+                    num2 = 0;
+                }else{
+                    Toast.makeText(getApplicationContext(), " ERROR 414 ", Toast.LENGTH_SHORT).show();
+
+                }*/
+            }
+                                    });
+        //
+        btnDiv = (Button) findViewById(R.id.btnDiv);
+        btnDiv.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                String v1 = edtValor1.getText().toString();
+                String v2 = edtValor2.getText().toString();
+
+                if(v1.trim().isEmpty()||(v2.trim().isEmpty())){
+
+                    AlertDialog.Builder dlg = new AlertDialog.Builder(btnDiv.getContext());
+                    dlg.setMessage("Há dados em branco");
+                    dlg.setNeutralButton("OK",null);
+                    dlg.show();
+
+                    //Toast.makeText(getApplicationContext(),"Há dados em branco", Toast.LENGTH_SHORT).show();
+                }else {
+
+                    double valor1 = Double.parseDouble(edtValor1.getText().toString());
+                    double valor2 = Double.parseDouble(edtValor2.getText().toString());
+                    double result = valor1 / valor2;
+
+                    AlertDialog.Builder dlg = new AlertDialog.Builder(btnDiv.getContext());
+                    dlg.setMessage(" "+result);
+                    dlg.setNeutralButton("OK",null);
+                    dlg.show();
+
+                    //Toast.makeText(getApplicationContext(), " " + result, Toast.LENGTH_SHORT).show();
+                }
+
+            }
+
+        });
+
+
+        btnSub = (Button) findViewById(R.id.btnSub);
+        btnSub.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                String v1 = edtValor1.getText().toString();
+                String v2 = edtValor2.getText().toString();
+
+                if(v1.trim().isEmpty()||(v2.trim().isEmpty())){
+
+                    AlertDialog.Builder dlg = new AlertDialog.Builder(btnSub.getContext());
+                    dlg.setMessage("Há dados em branco");
+                    dlg.setNeutralButton("OK",null);
+                    dlg.show();
+
+                    //Toast.makeText(getApplicationContext(),"Há dados em branco", Toast.LENGTH_SHORT).show();
+                }else {
+                    double valor1 = Double.parseDouble(edtValor1.getText().toString());
+                    double valor2 = Double.parseDouble(edtValor2.getText().toString());
+                    double result = valor1 - valor2;
+
+                    AlertDialog.Builder dlg = new AlertDialog.Builder(btnSub.getContext());
+                    dlg.setMessage(" "+result);
+                    dlg.setNeutralButton("OK",null);
+                    dlg.show();
+
+                    //Toast.makeText(getApplicationContext()," "+ result, Toast.LENGTH_SHORT).show();
+                }
+
+            }
+        });
+
+        btnMult = (Button) findViewById(R.id.btnMult);
+        btnMult.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                String v1 = edtValor1.getText().toString();
+                String v2 = edtValor2.getText().toString();
+
+                if(v1.trim().isEmpty()||(v2.trim().isEmpty())){
+
+                    AlertDialog.Builder dlg = new AlertDialog.Builder(btnMult.getContext());
+                    dlg.setMessage("Há dados em branco");
+                    dlg.setNeutralButton("OK",null);
+                    dlg.show();
+
+                    //Toast.makeText(getApplicationContext(),"Há dados em branco", Toast.LENGTH_SHORT).show();
+                }else {
+                    double valor1 = Double.parseDouble(edtValor1.getText().toString());
+                    double valor2 = Double.parseDouble(edtValor2.getText().toString());
+                    double result = valor1 * valor2;
+
+                    AlertDialog.Builder dlg = new AlertDialog.Builder(btnMult.getContext());
+                    dlg.setMessage(" "+result);
+                    dlg.setNeutralButton("OK",null);
+                    dlg.show();
+
+                    //Toast.makeText(getApplicationContext()," "+ result, Toast.LENGTH_SHORT).show();
+                }
+
+            }
+        });
+
+        btnCalc = (Button) findViewById(R.id.btnCalc);
+        btnCalc.setOnClickListener(this);
+
+    }
+    // v- metodo q dispara a ação do botão precisa do implements
+    public void onClick(View v){
+
+
+        String v1 = edtValor1.getText().toString();
+        String v2 = edtValor2.getText().toString();
+
+        if(v1.trim().isEmpty()||(v2.trim().isEmpty())){
+            AlertDialog.Builder dlg = new AlertDialog.Builder(this);
+            dlg.setMessage("Há dados em branco");
+            dlg.setNeutralButton("OK",null);
+            dlg.show();
+        }else {
+
+            double valor1 = Double.parseDouble(edtValor1.getText().toString());
+            double valor2 = Double.parseDouble(edtValor2.getText().toString());
+            double result = valor1 + valor2;
+
+            AlertDialog.Builder dlg = new AlertDialog.Builder(this);
+            dlg.setMessage(" "+result);
+            dlg.setNeutralButton("OK",null);
+            dlg.show();
+
+
+        }
+    }
+}
